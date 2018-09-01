@@ -1,0 +1,369 @@
+<!doctype html>
+ <html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CREDIT LOCUS || DASHBOARD</title>
+    <meta name="description" content="Credit Locus Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+<!--     Fonts and icons     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS Files -->
+   <!--  <link href="assetscreditscore/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+</head>
+<body> 
+        <!-- body-->
+
+         <div class="container"  >
+        <div class="row">
+        <div class="col-sm-12 col-sm-offset-2">
+            <!--      Wizard container        -->
+            <div class="wizard-container">
+                <div class="card wizard-card" data-color="blue" id="wizard">
+              <form>
+                <!--        You can switch ' data-color="green" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                        <div class="wizard-header">
+                            <h3>
+                                OPTAIN CREDIT SCORE <br>
+                                NB: Currency is GHc
+                               
+                            </h3>
+                            
+                        </div>
+                        <div class="wizard-navigation">
+                            <ul style="height: 40px !important;">
+                                <li><a href="#finance" data-toggle="tab">Financial Performance</a></li>
+                                <li><a href="#ownerdata" data-toggle="tab">Owner Data</a></li>
+                                <li><a href="#loanterms" data-toggle="tab">Loan Terms</a></li>
+                                <li><a href="#description" data-toggle="tab">Description</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane" id="finance">
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                   <!--  <h4 class="info-text"> Let's start with the basic details</h4> -->
+                                  </div>
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Years In Operation</label><br>
+                                             <input type="text" name="years" class="form-control" id="years" required="">
+                                          </div>   
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Income Net Monthly</label><br>
+                                             <input type="text" name="incomenetmonthly" class="form-control" id="incomenetmonthly" required="">
+                                          </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Average Sales Per Month</label><br>
+                                             <input type="text" name="averagesalespermonth" class="form-control" id="averagesalespermonth" required="">
+                                          </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Deposits Per Month</label><br>
+                                             <input type="text" name="depositspermonth" class="form-control" id="depositspermonth" required="">
+                                          </div>
+                                  </div>
+
+                              </div>
+                            </div>
+
+                            <!-- owner data begins -->
+                            <div class="tab-pane" id="ownerdata">
+                               <!--  <h4 class="info-text">Let us know about you </h4> -->
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Age</label><br>
+                                             <input type="text" name="age" class="form-control" id="age" required="">
+                                          </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Education</label><br>
+                                             <select name="education" class="form-control" id="education" required="">
+                                                <option disabled="" selected="">- Education -</option>
+                                                <option> Basic </option>
+                                                <option> Secondary/Vocational </option>
+                                                <option> Diploma </option>
+                                                <option> Degree </option>
+                                                <option> Masters or Higher </option>
+                                            </select>
+                                          </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Home Ownership</label><br>
+                                             <select name="homeownership" class="form-control" id="homeownership" required="">
+                                                <option disabled="" selected="">- Home ownership -</option>
+                                                <option> Renting </option>
+                                                <option> Home Owner </option>
+                                            </select>
+                                          </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Personal Saving Balance</label><br>
+                                             <input type="text" name="personalsavingbalance" class="form-control" id="personalsavingbalance" required="">
+                                          </div>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+
+                            <!-- Loan terms begins -->
+                            <div class="tab-pane" id="loanterms">
+                               <!--  <h4 class="info-text">Loan Terms. </h4> -->
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Purpose</label><br>
+                                             <select name="purpose" class="form-control" id="purpose" required="">
+                                                <option disabled="" selected="">- Purpose -</option>
+                                                <option> Capital Expensiture </option>
+                                                <option> Payroll Finance </option>
+                                                <option> Overhead Expenses </option>
+                                                <option> Purchase Order Finance </option>
+                                                <option> Invoice Finance </option>
+                                            </select>
+                                          </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Duration (in months)</label><br>
+                                             <input type="text" name="duration" class="form-control" id="duration" required="">
+                                          </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Amount Required</label><br>
+                                             <input type="text" name="amountrequired" class="form-control" id="amountrequired" required="">
+                                          </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-6">
+                                       <div class="form-group">
+                                            <label>Financing</label><br>
+                                             <select name="financing" class="form-control" id="financing" required="">
+                                                <option disabled="" selected="">- financing -</option>
+                                                <option> No Working Capital </option>
+                                                <option> Stretched Resources </option>
+                                                <option> Limited Financing </option>
+                                                <option> Cash Rich </option>
+                                                <option> Low Leverage </option>
+                                            </select>
+                                          </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <!-- DEscription starts here -->
+                            <div class="tab-pane" id="description">
+                                <div class="col-sm-4">
+                                    <div class="creditscore">
+                                       <center>
+                                            <h4>CREDIT SCORE</h4>
+                                            <input type="text" name="creditscore" id="creditscore" class="form-control" />
+                                       </center>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="creditscore">
+                                      <center>
+                                           <h4>CLASS</h4>
+                                           <input type="text" name="class"  id="class" class="form-control" />
+                                      </center> 
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="creditscore">
+                                        <center>
+                                            <h4>RISK DECISION</h4>
+                                             <input type="text" name="riskdecision" id="riskdecision"  class="form-control" />
+                                        </center>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- <div class="col-sm-3">
+                                    <div class="creditscore">
+                                        <h4>RISK CARRIER</h4>
+                                        <h1><label id="riskcarrier"></label></h1>
+                                        
+                                    </div>
+                                    
+                                </div> -->
+                                <!-- <div class="form-group">
+                                    <div class="col-sm-6 col-sm-offset-1">
+                                         <div class="form-group">
+                                            <label>Final Credit SCore</label>
+                                            <input type="text" name="weightedscore" id="creditscore">    
+
+                                            
+                                          </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        
+                        <div class="wizard-footer">
+                                <div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd btn-sm' name='next' value='Next' >
+                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value="Get Score" onclick="calc()" >
+
+                                </div>
+                                <div class="pull-left">
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                                </div>
+                                <div class="clearfix"></div>
+                        </div>
+                      
+                    </form>
+
+                                                  
+
+                </div>
+              
+            </div> <!-- wizard container -->
+        </div>
+        </div> <!-- row -->
+    </div> <!--  big container -->
+
+        
+    
+            <div>
+                <br>
+            <br>
+            <br>
+            <br>
+            <br>
+             <br>
+            <br>
+            <br>
+            <br>
+            <br>
+             <br>
+            <br>
+            <br>
+            <br>
+            <br>
+             <marquee> <p  style="color:;"><b style="color:#a9a9a9; font-size:20px; text-align: center;" >We are the premier destination for credit-seeking micro-businesses</b></p> </marquee>
+
+            </div>
+
+            </div><!--/.col-->
+
+
+            
+            <!-- <div class="col-xl-6">
+                <div class="card" >
+                    <div class="card-header">
+                        <h4>World</h4>
+                    </div>
+                    <div class="Vector-map-js">
+                        <div id="vmap" class="vmap" style="height: 265px;"></div>
+                    </div>
+                </div>
+            
+            </div> -->
+
+
+        </div> <!-- .content -->
+    </div><!-- /#right-panel -->
+
+<!--    credit score js link    -->
+    <script src="creditscore.js"></script>
+
+    <!-- Right Panel -->
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
+    <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
+    <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+    <!-- <script>
+        ( function ( $ ) {
+            "use strict";
+
+            jQuery( '#vmap' ).vectorMap( {
+                map: 'world_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                hoverOpacity: 0.7,
+                selectedColor: '#1de9b6',
+                enableZoom: true,
+                showTooltip: true,
+                values: sample_data,
+                scaleColors: [ '#1de9b6', '#03a9f5' ],
+                normalizeFunction: 'polynomial'
+            } );
+        } )( jQuery );
+    </script> -->
+    <!--  <script type="text/javascript" src="creditscore.js"></script> -->
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+    <!--  Plugin for the Wizard -->
+    <script src="assets/js/gsdk-bootstrap-wizard.js"></script>
+
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/  -->
+    <script src="assets/js/jquery.validate.min.js"></script>
+   
+    
+</body>
+</html>
